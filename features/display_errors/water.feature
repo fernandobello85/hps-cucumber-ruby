@@ -7,17 +7,14 @@ Feature: Water
     Given the coffee machine is started
     And I handle everything except the water tank
   
-  @implemented @beta
   Scenario: Message "Fill water tank" is displayed after 50 coffees are taken
     When I take "50" coffees
     Then message "Fill tank" should be displayed
-  @to_implement @public
   Scenario: It is possible to take 10 coffees after the message "Fill water tank" is displayed
     Given I take "60" coffees
     Then coffee should be served
     When I take a coffee
     Then coffee should not be served
-  @implemented @public
   Scenario: When the water tank is filled, the message disappears
     Given I take "55" coffees
     When I fill the water tank
