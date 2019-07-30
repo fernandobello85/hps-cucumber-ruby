@@ -1,7 +1,4 @@
 Feature: Water
-
-    #errorhere
-    
     As a coffee lover
     I have to handle the water tank
     So I can have coffee when I need it
